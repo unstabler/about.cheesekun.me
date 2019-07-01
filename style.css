@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+@font-face {
+    font-family: 'GoyangNJ';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/GoyangNJ.woff') format('woff');
+}
+
+html, body, h1, h2, h3, h4, h5, h6 {
+    padding: 0; margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'McLaren', 'GoyangNJ', sans-serif;
+}
+
+html, body {
+    font-family: 'Noto Sans KR', 'NanumGothic', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+body > header {
+    display: flex;
+    width: 100%; height: 100vh;
+
+    background-image: linear-gradient(to bottom, rgba(255,235,76,1) 0%,rgba(255,203,50,1) 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+body > header h1 {
+    font-size: 3em;
+}
+
+body > header img#cheesekun {
+    width: 16em; height: 16em;
+    margin-bottom: 1em;
+
+    border-radius: 8px;
+
+    object-fit: cover;
+    object-position: center center;
+
+}
+
+body > header ul {
+    list-style: none;
+    margin: 0; padding: 0 0.5em;
+
+    text-align: left;
+}
+
+body > header > section {
+    position: relative;
+
+    width: 100%;
+    max-width: 360px;
+    background: white;
+
+    padding: 2em 1.5em;
+    box-sizing: border-box;
+    text-align: center;
+    color: #222;
+
+    box-shadow: inset 0 -1px 4px rgba(0, 0, 0, 0.12),
+    2px 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+body > header > section:before {
+    content: '';
+    display: block;
+
+    width: 48px;
+    height: 96px;
+
+    position: absolute;
+    left: calc(50% - 24px);
+    top: -45px;
+
+    background: rgba(255, 255, 255, 0.4);
+
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+
+    transform: rotate(7deg);
+}
+
+body > main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2em;
+    box-sizing: border-box;
+
+    color: #242424;
+}
+
+body > main ul {
+    list-style: square;
+}
+
+body > main ul li {
+    line-height: 2;
+}
